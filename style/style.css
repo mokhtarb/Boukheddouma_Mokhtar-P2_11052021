@@ -10,23 +10,29 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+/*----------------------header---------------------------*/
+
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-.submit a {
+
+.submit {
   text-decoration: none;
+  display: block;
   color: #0065fc;
   font-weight: bold;
-  padding-left: 2em;
+  align-items: flex-end;
 }
 nav li {
   list-style: none;
-  justify-content: space-between;
+  align-items: center;
 }
 nav ul {
-  display: flex;
   text-decoration: none;
-  justify-content: space-between;
+  display: flex;
+  align-content: center;
+  flex-grow: 1;
+  flex-basis: 0;
 }
