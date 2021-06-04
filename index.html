@@ -27,10 +27,13 @@
             <img src="images/logo/Reservia.svg" alt="logo" />
           </a>
         </div>
+        <div class="submit">
+          <a href="#">S'inscrire</a>
+        </div>
         <div class="preference">
           <nav>
             <ul>
-              <li>
+              <li class="selected">
                 <a href="#">Hébergements</a>
               </li>
               <li>
@@ -38,9 +41,6 @@
               </li>
             </ul>
           </nav>
-        </div>
-        <div class="submit">
-          <a href="#">S'inscrire</a>
         </div>
       </header>
 
@@ -50,14 +50,14 @@
         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
         <form>
-          <div>
+          <div class="buttonSearch">
             <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
             <input
               type="search"
               id="maRecherche"
               placeholder="Marseille, France"
             />
-            <button>
+            <button id="Loupe" type="submit" value="Rechercher">
               <i class="fas fa-search" aria hidden="true"></i>
             </button>
           </div>
@@ -65,8 +65,8 @@
 
         <!---------------------------filtre-------------------------------------------------->
 
-        <section id="Filtre">
-          <h2>Filtre</h2>
+        <section id="filtre">
+          <h2>Filtres</h2>
           <div>
             <i class="fas fa-money-bill-wave">Economique</i>
             <i class="fas fa-child">Familial</i>
@@ -78,6 +78,8 @@
             cette ville
           </p>
         </section>
+        <!-----------------------Hebergement------------------------------------------->
+
         <section id="hebergement">
           <div class="pop">
             <div id="title">
@@ -132,6 +134,9 @@
               </article>
             </div>
           </div>
+
+          <!------------------------Hébergements------------------------->
+
           <div>
             <h3>Hébergements à Marseille</h3>
             <article>
@@ -227,6 +232,8 @@
             <p><a href="#">Afficher plus</a></p>
           </div>
         </section>
+
+        <!-----------------------Activités-------------------------->
 
         <section id="activite">
           <h3>Activités à Marseille</h3>
