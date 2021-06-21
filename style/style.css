@@ -110,7 +110,6 @@ form {
 
 #maRecherche {
   background-color: #fff;
-  color: white;
   cursor: pointer;
   padding: 10px 10px;
   width: 225px;
@@ -145,6 +144,10 @@ form {
   margin-bottom: 15px;
   margin-right: 15px;
 }
+#filtre a:hover {
+  background-color: blue;
+  color: white;
+}
 
 #filtre a i {
   width: 40px;
@@ -171,8 +174,6 @@ form {
 /*------------------------------------Hebergements-----------------------------------------------*/
 
 #hebergement {
-  width: 90%;
-  margin: auto;
 }
 
 .pop {
@@ -210,7 +211,10 @@ form {
 }
 
 /*-------------------Marseille---------------------------------------------*/
-
+.global {
+  width: 90%;
+  margin: auto;
+}
 .global img {
   object-fit: cover;
   width: 100%;
@@ -258,8 +262,9 @@ form {
 }
 
 footer {
-  width: 90%;
-  margin: auto;
+  background-color: #f2f2f2;
+  padding-left: 5%;
+  padding-top: 5%;
 }
 
 footer div ul {
@@ -337,6 +342,7 @@ footer div ul {
     padding: 20px 40px;
     border-radius: 25px;
     box-sizing: border-box;
+    margin: 0 30px;
   }
 
   .articles {
@@ -371,8 +377,12 @@ footer div ul {
   .activ {
     display: flex;
   }
+
   #activite article {
     box-shadow: 2px 2px 20px rgb(230 230 230);
+  }
+  #activite article h4 {
+    font-size: 14px;
   }
 
   .activ .column {
@@ -397,7 +407,6 @@ footer div ul {
   /*----------------footer--------------------------------------*/
 
   footer {
-    width: 100%;
     display: flex;
     padding-bottom: 50px;
     padding-top: 50px;
