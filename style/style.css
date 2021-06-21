@@ -53,7 +53,9 @@ header {
 }
 
 .selected a {
-  color: #0065fc;
+  /*color: #0065fc;
+}*/
+  color: #0065ff;
 }
 .submit {
   text-align: end;
@@ -73,8 +75,7 @@ header {
 #filtre,
 #title,
 .list,
-#activite,
-footer {
+#activite {
   width: 90%;
   margin: 0 auto;
 }
@@ -172,9 +173,6 @@ form {
 #hebergement {
   width: 90%;
   margin: auto;
-  /*display: flex;
-  flex-wrap: wrap;
-  justify-content: center;*/
 }
 
 .pop {
@@ -188,6 +186,7 @@ form {
   box-shadow: 1px 1px 15px rgb(111 111 111);
   margin-bottom: 20px;
   padding: 0.35em;
+  background-color: #fff;
 }
 
 .list img {
@@ -258,6 +257,15 @@ form {
   margin-left: 15px;
 }
 
+footer {
+  width: 90%;
+  margin: auto;
+}
+
+footer div ul {
+  padding-left: 0;
+}
+
 @media screen and (min-width: 800px) {
   .buttonSearch {
     max-width: 400px;
@@ -315,6 +323,7 @@ form {
   .preference nav ul li.selected {
     border-top: 2px solid #0065fc;
     border-bottom: none;
+    cursor: pointer;
   }
 
   #hebergement {
@@ -355,5 +364,56 @@ form {
     padding: 20px 40px;
     background-color: #f2f2f2;
     box-sizing: border-box;
+  }
+
+  /*------------------Activites------------------------*/
+
+  .activ {
+    display: flex;
+  }
+  #activite article {
+    box-shadow: 2px 2px 20px rgb(230 230 230);
+  }
+
+  .activ .column {
+    padding-right: 30px;
+  }
+  .activ .column:nth-child(4) {
+    padding-right: 0;
+  }
+  #activite article.big {
+    height: 400px;
+  }
+  #activite article.big img {
+    height: 90%;
+  }
+  #activite article.medium {
+    height: 220px;
+  }
+  #activite article.little {
+    height: 155px;
+  }
+
+  /*----------------footer--------------------------------------*/
+
+  footer {
+    width: 100%;
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #f2f2f2;
+  }
+
+  .aPropos {
+    margin-right: 15%;
+    padding-left: 5%;
+  }
+
+  .footHeberg {
+    margin-right: 15%;
+  }
+
+  footer ul {
+    padding: 0;
   }
 }
