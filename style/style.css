@@ -338,6 +338,8 @@ footer div ul {
   #hebergement {
     display: flex;
     justify-content: space-between;
+    width: 90%;
+    margin: auto;
   }
 
   .global {
@@ -346,7 +348,7 @@ footer div ul {
     padding: 20px 40px;
     border-radius: 25px;
     box-sizing: border-box;
-    margin: 0 30px;
+    margin: 0;
   }
 
   .articles {
