@@ -143,10 +143,11 @@ form {
   padding-right: 25px;
   margin-bottom: 15px;
   margin-right: 15px;
+  font-weight: bold;
 }
 #filtre a:hover {
-  background-color: blue;
-  color: white;
+  background-color: #deebff;
+  color: blue;
 }
 
 #filtre a i {
@@ -163,6 +164,7 @@ form {
 #filtre p i {
   padding-right: 10px;
   color: #0065ff;
+  border: solid #f2f2f2 2px;
 }
 
 #title {
@@ -278,6 +280,7 @@ footer div ul {
   #Loupe {
     width: initial;
     padding: 15px;
+    border-radius: 0 14px 14px 0;
   }
 
   #Loupe span {
@@ -423,5 +426,8 @@ footer div ul {
 
   footer ul {
     padding: 0;
+  }
+  footer li {
+    margin-bottom: 10px;
   }
 }
